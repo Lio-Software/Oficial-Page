@@ -1,53 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" href="assets/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent & Ride</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lio Software</title>
+  <meta name="title" content="LioSoftware">
+  <meta name="description" content="Es la página oficial de la empresa hecha con HTML">
+
+  <!-- - favicon-->
+  <link rel="shortcut icon" href="./assets/images/Logo-lio (1).png " type="image/svg+xml">
+
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap" rel="stylesheet">
+
+  <!-- material icon font-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+
+  <!--custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- preload images-->
 </head>
+
 <body>
+
+  <!--- #HEADER-->
+
+  <header class="header">
     <div class="container">
-        <h1>Welcome to Rent & Ride</h1>
-        <p>Your one-stop solution for renting vehicles easily.</p>
-        <a href="./pages/aviso-de-privacidad.html" class="btn">Explore Now</a>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Logo-lio.png" width="128" height="63" alt="autofix home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#servicios" class="navbar-link">Servicios</a>
+          </li>
+
+          <li>
+            <a href="#proyectos" class="navbar-link">Proyectos</a>
+          </li>
+
+          <li>
+            <a href="#nosotros" class="navbar-link">Nosotros</a>
+          </li>
+
+          <li>
+            <a href="#contacto" class="navbar-link">Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="nav-toggle-icon icon-1"></span>
+        <span class="nav-toggle-icon icon-2"></span>
+        <span class="nav-toggle-icon icon-3"></span>
+      </button>
+
     </div>
+  </header>
+
+
+  <main>
+    <article>
+      <!-- Vista inicial-->
+      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/logo-izq.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">Lio Software</h1>
+
+            <p class="section-text">
+              Creemos en el poder de la tecnología para hacer del mundo un lugar mejor. 
+              En Lio Software, nos esforzamos por desarrollar aplicaciones que no solo resuelvan problemas, 
+              sino que también creen nuevas oportunidades para el crecimiento y el bienestar. 
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!--- #SERVICIOS-->
+      <section class="section service has-bg-image" aria-labelledby="service-label" style="background-color: white;">
+        <div class="container">
+
+          <p class="section-subtitle :light" id="service-label">Nosotros</p>
+
+          <p class="section-text"> Somos una empresa dedicada al desarrollo de software, creamos soluciones 
+            tecnológicas innovadoras que transforman la manera en que las personas y las empresas interactúan con la tecnología. 
+            Nuestro equipo está compuesto por expertos apasionados que combinan creatividad, experiencia y habilidades para desarrollar 
+            aplicaciones robustas, eficientes y adaptadas a las necesidades específicas de nuestros clientes. 
+            Nos enorgullece nuestra capacidad para anticipar las demandas del futuro y ofrecer productos que no solo cumplen, 
+            sino que superan las expectativas.
+          </p>
+
+          <a id="servicios"> 
+          <h2 class="h2 section-title">Nuestros Servicios</h2></a>
+
+          <ul class="service-list">
+           
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/sof-personal.svg" width="110" height="110" loading="lazy" alt="Engine Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Software personalizado</h3>
+
+                <p class="card-text">
+                  Soluciones a medida para empresas de todos los tamaños.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/movile (2).svg" width="110" height="110" loading="lazy" alt="Brake Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Aplicaciones móviles</h3>
+
+                <p class="card-text">
+                  Aplicaciones innovadoras para iOS y Android.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/integracion-sistemas (1).svg" width="110" height="110" loading="lazy" alt="Tire Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Integración de sistemas</h3>
+
+                <p class="card-text">
+                  Conexión y optimización de sistemas existentes para mejorar la eficiencia.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/mantenimiento.svg" width="110" height="110" loading="lazy"
+                    alt="Battery Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Soporte y mantenimiento</h3>
+
+                <p class="card-text">
+                  Servicios continuos para garantizar el funcionamiento óptimo de sus soluciones tecnológicas.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="service-banner">
+              <img src="./assets/images/software-central (1).png" width="646" height="380" loading="lazy" alt="Red Car"
+                class="move-anim">
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/consultoria.svg" width="110" height="110" loading="lazy"
+                    alt="Steering Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Consultoría tecnologica</h3>
+
+                <p class="card-text">
+                  Asesoramiento experto para la implementación de tecnologías avanzadas.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+ 
+
+      <!-- PROYECTO ESTELAR -->
+      <p class="section-subtitle :light" id="work-label">Nuestro </p>
+
+      <a id="proyectos"> 
+      <h2 class="h4 section-proyectos">Proyecto estelar</h2>  </a>
+
+      <section class="team-section">
+        <div class="container">
+          <div class="team-members">
+            <div class="team-member">
+              <img src="./assets/images/rent-logo (1).svg" alt="foto rent & ride">
+              <h3>Rent & Ride</h3>
+              <p>Nuestra pasión por la tecnología se refleja en cada uno de nuestros proyectos. <br>
+                En Lio Software, desarrollamos software con propósito. <br> 
+                Rent & Ride es un claro ejemplo de cómo la innovación puede mejorar la movilidad urbana y hacerla más accesible y sostenible. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+  <a id="nosotros"> <h2 class="h4 section-proyectos">Conoce al equipo</h2> </a>
+  <h2 class="h4 section-proyectos">detras de Lio Software</h2>  
+  <section class="team-section">
+    <div class="container">
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./assets/images/fer.svg" alt="Desarrollador de Software">
+          <p>Expertos en múltiples lenguajes y tecnologías.</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/lalo.svg" alt="Diseñador UX/UI">
+          <p>Especialistas en crear interfaces intuitivas y atractivas.</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/mau.svg" alt="Gerente de Proyecto">
+          <p>Líderes que aseguran la entrega puntual y exitosa de cada proyecto.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER-->
+
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo-lio (1).png" width="128" height="63" alt="autofix home">
+          </a>
+
+          <a id="contacto">  <p class="footer-text">
+            Cada línea de código en Lio Software está pensada para transformar ideas en soluciones prácticas.
+          </p> </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61562254742501" class="social-link">
+                <img src="./assets/images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/liosoftware/" class="social-link">
+                <img src="./assets/images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Horarios de servicio</p>
+          </li>
+
+          <li>
+            <p class="p">Lunes – Viernes</p>
+            <span class="span">10:00 – 16:45</span>
+          </li>
+
+          <li>
+            <p class="p">Sabados</p>
+            <span class="span">10:00 – 16:00</span>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Contacto</p>
+          </li>
+
+          <li>
+            <a href="tel:+529673208679" class="footer-link">
+              <span class="material-symbols-rounded">call</span>
+
+              <span class="span">+52 967 320 86 79</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:liosoftware00@gmail.com" class="footer-link">
+              <span class="material-symbols-rounded">correo</span>
+
+              <span class="span">liosoftware00@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
